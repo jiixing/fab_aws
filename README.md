@@ -226,9 +226,9 @@ This will update the currently deployed Lambda code to the contents of the lates
 ```bash
 # Installs the latest built Lambda package to the specified Lambda function ARN.
 
-FUNCTION_NAME=downtime_notifier
+FUNCTION=downtime_notifier
 ARN=arn=arn:aws:lambda:us-west-2:111111111111:function:downtime-notifier-stack-LambdaFunction-J3R
-fab deploy:function_name=$FUNCTION_NAME,arn=$ARN
+fab deploy:function_name=$FUNCTION,arn=$ARN
 ```
 
 ## 9) Run Tests
