@@ -3,3 +3,7 @@ _output/*.template
 *.local.yaml
 lambda/*/_staging
 lambda/*/_builds
+
+\.idea/
+
+doc\.txt
