@@ -12,3 +12,9 @@ def handler(event, context):
     print("value3 = " + event['key3'])
     return event['key1']  # Echo back the first key value
     #raise Exception('Something went wrong')
+
+if __name__ == '__main__':
+    # For invoking the lambda function in the local environment.
+    from hello_world import LocalContext
+    context = LocalContext()
+    handler(None, context)
